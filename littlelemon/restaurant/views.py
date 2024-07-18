@@ -4,9 +4,9 @@ from rest_framework.decorators import api_view
 from .models import Menu
 from .serializers import MenuSerializer
 
-
+# Create your views here.
 def index(request):
-    return render(request, 'restaurant/index.html', {})
+  return render(request, 'index.html', {})
 
 # Create your views here. 
 class MenuItemsView(generics.ListCreateAPIView):
