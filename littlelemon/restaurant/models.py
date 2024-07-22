@@ -7,8 +7,10 @@ class Menu(models.Model):
     inventory = models.IntegerField()
 
     def __str__(self):
-        return self.title
+        return f'{self.title} : {str(self.price)}'
 
+    
+    
 class Booking(models.Model):
     customer_id = models.IntegerField()
     customer_name = models.CharField(max_length=255)
@@ -18,4 +20,7 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.customer_name} - {self.BookingDate}"
+    
+
+    
 
