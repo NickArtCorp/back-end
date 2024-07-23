@@ -10,7 +10,7 @@ from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
 def index(request):
-  return render(request, 'index.html', {})
+  return render(request, 'restaurant/index.html', {})
 
 # Create your views here.
 class MenuItemsView(generics.ListCreateAPIView):
